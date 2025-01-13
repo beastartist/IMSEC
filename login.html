@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login  Page</title>
+    <link rel="stylesheet" href="stylelin.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form">
+            <h2>Student Login </h2>
+            <div class="input-group">
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="Password">Password</label>
+                <input type="text" id="password" name="Password" required>
+                <span class="eye" onclick="togglePassword()"</span>
+            </div>
+                        <button type="submit">Log in</button>
+<p class="message">Don't have an account? <a href="file:///C:/Users/hp/OneDrive/Documents/register.html" class="login-link">Register Now</a>
+            </p>
+        </form>
+    </div>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
